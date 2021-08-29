@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="input-city" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="searchWeather()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <h1 id="result-display" class="text-center text-white">No result found</h1>
+        <div id="loading display" class="text-center">
+        <div class="spinner-grow text-warning" style="width: 7rem; height: 7rem;" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
+        <div id="show-temperature" class="weather-status text-white text-center">
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1>Dhaka</h1>
+            <h1>12:00:00</h1>
+            <h3>70%</h3>
+            <h3><span>38.06</span>&deg;C</h3>
+            <h3><span>feels like: 37</span>&deg;C</h3>
+           
+            <h1 class="lead">Clouds</h1>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>
